@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+class BankAccount{
+
+
+public String Depositor_name;
+public int  acc_no;
+public String acc_type;
+public double bal_amt=0;
+public static void main(String[] args){
+}
+public void details(){
+Scanner input=new Scanner(System.in);
+System.out.println("enter your Details");
+System.out.println("Enter your name");
+Depositor_name=input.nextLine();
+input.next();
+System.out.println("Enter your account number");
+acc_no=input.nextInt();
+input.next();
+System.out.pr
+intln("enter your account type");
+System.out.println("deposit the rupiya");
+
+
+}
+}
+
