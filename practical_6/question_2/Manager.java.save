@@ -1,0 +1,21 @@
+public class Employee{
+public String name;
+
+Employee(String dept){
+this.dept=dept;
+
+}
+
+public void print(){
+System.out.print("Name: "+name+"\n Salary"+salary);
+}
+
+
+
+public static void main(String[] args){
+
+
+
+}
+
+}
