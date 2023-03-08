@@ -38,19 +38,21 @@ System.out.println("square " + x*x);
 
 
 public class Thed{
-public static void main(String[] args){
-Even e=new Even();
-e.setPriority(Thread.MAX_PRIORITY);
+public static void main(String[] args)throws 
+Exception{Even e=new Even();
+//e.setPriority(Thread.MAX_PRIORITY);
 e.start();
 Odd o=new Odd();
-o.setPriority(Thread.MIN_PRIORITY);
-
+//o.setPriority(Thread.MIN_PRIORITY);
+Thread.sleep(1000);
 o.start();
 
 Sqr s=new Sqr();
-s.setPriority(Thread.MIN_PRIORITY);
+Thread.sleep(500);
+
+//s.setPriority(Thread.MIN_PRIORITY);
 s.start();
-
+}
 }
 
-}
+
